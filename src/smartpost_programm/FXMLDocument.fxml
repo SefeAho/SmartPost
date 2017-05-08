@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="798.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartpost_programm.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="673.0" prefWidth="652.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="614.0" prefWidth="809.0">
+               <children>
+                  <WebView fx:id="web" prefHeight="606.0" prefWidth="809.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane maxHeight="184.0" minHeight="150.0" minWidth="0.0" prefHeight="200.0" prefWidth="800.0">
+               <children>
+                  <ComboBox fx:id="spComboList" layoutX="14.0" layoutY="102.0" prefWidth="150.0" promptText="----" />
+                  <Button fx:id="addSpButton" layoutX="179.0" layoutY="102.0" mnemonicParsing="false" onAction="#addSp" prefHeight="25.0" prefWidth="46.0" text="Lisää" />
+                  <Label layoutX="16.0" layoutY="78.0" text="Lisää kaupungin SmartPost-automaatit kartalle" />
+                  <Button fx:id="deleteSpButton" layoutX="14.0" layoutY="135.0" mnemonicParsing="false" onAction="#deleteSp" text="Poista SmartPost-automaatit kartalta" />
+                  <Label layoutX="514.0" layoutY="47.0" text="Pakettien luonti ja lähetys" />
+                  <Button fx:id="addPackageButton" layoutX="514.0" layoutY="66.0" mnemonicParsing="false" onAction="#addPackage" text="Luo paketti" />
+                  <Button fx:id="sendPackageButton" layoutX="514.0" layoutY="102.0" mnemonicParsing="false" onAction="#sendPackage" text="Lähetä paketti" />
+                  <ComboBox fx:id="packageComboList" layoutX="515.0" layoutY="135.0" onMouseClicked="#loadPackages" prefWidth="150.0" promptText="valitse paketti" />
+                  <Button fx:id="removePathButton" layoutX="665.0" layoutY="102.0" mnemonicParsing="false" onAction="#deletePaths" text="Poista reitit" />
+                  <Label fx:id="headlineLabel" layoutX="15.0" layoutY="14.0" prefHeight="50.0" prefWidth="250.0" />
+                  <Button fx:id="exitButton" layoutX="751.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitProgram" text="Lopeta" />
+                  <Button fx:id="logButton" layoutX="766.0" layoutY="43.0" mnemonicParsing="false" onAction="#bringLog" text="Loki" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+
+/* 
+    Created on : Dec 25, 2016, 5:42:08 PM
+    Author     : Severi Ahopelto & Markus Kyläheiko
+*/
+
+.root {
+    -fx-background-image: url("backround.jpg");
+    -fx-text-fill:  #fff;    
+}
+.split-pane {
+    -fx-background-color:  #c31b1b;
+    -fx-background-image: url("backround.jpg");
+    -fx-text-fill:  #fff;    
+}
+.label {
+    -fx-text-fill:  #fff;
+}
+.button {
+     -fx-background-color: linear-gradient(#ff0000,#b54f00);
+    -fx-text-fill:  #fff;    
+}
+.button:hover {
+    -fx-background-color: linear-gradient( #ff0000,#ff7b7b);
+}
+.combo-box{
+     -fx-background-color: linear-gradient(#ff0000,#b54f00);
+    -fx-text-fill:  #fff;
+}
+.combo-box:hover{
+    -fx-background-color: linear-gradient( #ff0000,#ff7b7b);
+}
+.list-cell {
+    -fx-background-color: #ff0000;
+    -fx-text-fill:  #fff;   
+}
+.list-cell:hover{
+    -fx-background-color: linear-gradient( #ff0000,#ff7b7b);
+}
+.text{
+     -fx-background-color: linear-gradient(#ff0000,#b54f00);
+    -fx-text-fill:  #fff;    
+}
+.check-box {
+    -fx-text-fill:  #fff;  
+}
+.textfield {
+    -fx-background-color:  #fff;
+}
+.text-area{
+    -fx-background-image: url("backround1.jpg");
+    -fx-text-fill:  #fff;    
+}
